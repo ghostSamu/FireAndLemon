@@ -1,11 +1,30 @@
-## 「世界上只有一种英雄主义，就是认清了生活的真相后还依然爱着它」　― 罗曼・罗兰
+##　個人情報
+
+  東京に住んでいる、サッカーが好き。
+
+##　勉強しているもの
+
+ - SpringBoot
+ - SpringSecurity
+ - MyBatis
+ - MyBatisGenerator
+ - Swagger-UI
+      - [项目继承MyBatis模块](./项目集成Swagger模块.md)
+   - [项目集成Swagger模块]
+ - Druid
+ - MongoDB
+ - Redis
+ - Vue
+ - Vue-router
+ - Vuex
 
 
-##個人履歴
 
-###勉強しているもの
+##　今年の目標
 
-###今年の目標
+ - 彼女ができる
+ - 新しいジョブを見つける
+ - 一つのJava項目を作成
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
