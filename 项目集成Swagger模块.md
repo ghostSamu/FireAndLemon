@@ -27,52 +27,52 @@
 ### 添加Swagger-UI的配置
 指明为哪些类添加注解
 ``` java  
-	@Bean
-    public Docket createRestApi(){
-        return new Docket(DocumentationType.SWAGGER_2)
-                .apiInfo(apiInfo())
-                .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.demo.controller"))
-                .paths(PathSelectors.any())
-                .build();
-    }
+@Bean
+public Docket createRestApi(){
+    return new Docket(DocumentationType.SWAGGER_2)
+            .apiInfo(apiInfo())
+            .select()
+            .apis(RequestHandlerSelectors.basePackage("com.example.demo.controller"))
+            .paths(PathSelectors.any())
+            .build();
+}
 ```
 配置index.html中显示的项目信息
 ```java   
-	private ApiInfo apiInfo(){
-        return new ApiInfoBuilder()
-                .title("SwaggerUI演示")
-                .description("mall-learning")
-                .contact(new Contact("FireAndLemon","",""))
-                .version("1.0")
-                .build();
-    }
+private ApiInfo apiInfo(){
+    return new ApiInfoBuilder()
+             .title("SwaggerUI演示")
+             .description("mall-learning")
+             .contact(new Contact("FireAndLemon","",""))
+             .version("1.0")
+             .build();
+}
 ```
 ### 手动添加Swagger静态文件的映射
 不指定的话，访问http://localhost:8080/swagger-ui/index.html 的时候会返回404错误
 ``` java  
-	@Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        String baseUrl = StringUtils.trimTrailingCharacter(this.baseUrl, '/');
-        registry.
-                addResourceHandler(baseUrl + "/swagger-ui/**")
-                .addResourceLocations("classpath:/META-INF/resources/webjars/springfox-swagger-ui/")
-                .resourceChain(false);
-    }
-    @Override
-    public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController(baseUrl + "/swagger-ui/")
-                .setViewName("forward:" + baseUrl + "/swagger-ui/index.html");
-    }
-    @Override
-    public void addCorsMappings(CorsRegistry registry) {
-        registry
-                .addMapping("/api/pet")
-                .allowedOrigins("http://editor.swagger.io");
-        registry
-                .addMapping("/v2/api-docs.*")
-                .allowedOrigins("http://editor.swagger.io");
-    }
+ @Override
+ public void addResourceHandlers(ResourceHandlerRegistry registry) {
+     String baseUrl = StringUtils.trimTrailingCharacter(this.baseUrl, '/');
+     registry.
+             addResourceHandler(baseUrl + "/swagger-ui/**")
+             .addResourceLocations("classpath:/META-INF/resources/webjars/springfox-swagger-ui/")
+             .resourceChain(false);
+ }
+ @Override
+ public void addViewControllers(ViewControllerRegistry registry) {
+     registry.addViewController(baseUrl + "/swagger-ui/")
+             .setViewName("forward:" + baseUrl + "/swagger-ui/index.html");
+ }
+ @Override
+ public void addCorsMappings(CorsRegistry registry) {
+     registry
+             .addMapping("/api/pet")
+             .allowedOrigins("http://editor.swagger.io");
+     registry
+             .addMapping("/v2/api-docs.*")
+             .allowedOrigins("http://editor.swagger.io");
+ }
 ```
 
 ### Controller类添加注解
