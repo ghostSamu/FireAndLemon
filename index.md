@@ -1,29 +1,11 @@
-## Welcome to GitHub Pages
+## 「世界上只有一种英雄主义，就是认清了生活的真相后还依然爱着它」　― 罗曼・罗兰
 
-You can use the [editor on GitHub](https://github.com/ghostSamu/FireAndLemon/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+##個人履歴
 
-### Markdown
+###勉強しているもの
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+###今年の目標
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
