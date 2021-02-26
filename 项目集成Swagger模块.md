@@ -91,7 +91,7 @@ public class PmsBrandController {
     public CommonResult<List<PmsBrand>> getBrandList() {
         return CommonResult.success(brandService.listAllBrand());
     }
-    }
+}
 ```
 
 ### 参考
