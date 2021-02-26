@@ -23,7 +23,7 @@
 
  - 彼女ができる
  - 新しいジョブを見つける
- - 一つのJava項目を作成
+ - 一つのJava項目を作成する
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
