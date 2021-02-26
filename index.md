@@ -8,7 +8,7 @@
  - MyBatis
  - MyBatisGenerator
  - Swagger-UI
-      - [项目继承MyBatis模块](./项目集成Swagger模块.md)
+      - [项目集成MyBatis模块](./项目集成Swagger模块.md)
    - [项目集成Swagger模块]
  - Druid
  - MongoDB
