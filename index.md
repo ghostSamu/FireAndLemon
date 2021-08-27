@@ -5,11 +5,12 @@
 
  - SpringBoot
  - SpringSecurity
+   - [整合SpringBoot+SpringSecurity+Jwt](./整合SpringBoot+SpringSecurity+Jwt.md)
  - MyBatis
  - MyBatisGenerator
  - Swagger-UI
-      - [项目集成MyBatis模块](./项目集成Swagger模块.md)
-   - [项目集成Swagger模块]
+   - [项目集成MyBatis模块]
+   - [项目集成Swagger模块](./项目集成Swagger模块.md)
  - Druid
  - MongoDB
  - Redis
