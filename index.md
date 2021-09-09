@@ -9,12 +9,12 @@
  - MyBatis
  - MyBatisGenerator
  - Swagger-UI
-   - [项目集成MyBatis模块]
    - [项目集成Swagger模块](./项目集成Swagger模块.md)
  - Druid
  - MongoDB
  - Redis
  - Vue
+   - [Vue加载矢量图](./Vue项目中使用svg图片.md)
  - Vue-router
  - Vuex
 
@@ -22,8 +22,7 @@
 
 ## 今年の目標
 
- - 彼女ができる
- - 新しいジョブを見つける
+ - 日本語をようっく喋ること
  - 一つのJava項目を作成する
 ```
 
