@@ -20,26 +20,24 @@ requireAll(req)
   * keys（）：返回由文件的键组成的数组（例如  key：./user.svg）
   * resolve（）：传入文件的键，返回文件相对于项目启动目录的路径
   
-* **数组调用map()函数,遍历数组中元素(key)**
+* **数组keys调用map()函数,遍历数组中元素(key)，返回一个module数组**
 
-  * 传入函数req
-
-    `ƒ webpackContext(req) {  //传入的参数req即为key
-    	var id = webpackContextResolve(req);
-    	return __webpack_require__(id);  //根据id返回模块
+  * 传入函数webpackContext(key)，根据路径返回模块
+  
+    ` ƒ webpackContext(key) {               
+    	 var id = webpackContextResolve(key); 	
+       return __webpack_require__(id);               
+    }`
+  * map:{"./user.svg": "./src/icons/svg/user.svg"},根据key返回模块路径
+  
+    `function webpackContextResolve(key) {
+    	if(!__webpack_require__.o(map, key)) {
+    		e.code = 'ERROR';
+    	}
+    	return map[req];
     }`
 
-    `function webpackContextResolve(req) {
-    	if(!__webpack_require__.o(map, req)) {
-    		var e = new Error("Cannot find module '" + req + "'");
-    		e.code = 'MODULE_NOT_FOUND';
-    		throw e;
-    	}
-    	return map[req];   //map:   {"./user.svg": "./src/icons/svg/user.svg"
-    }`}
-
-  * 返回模块
-
+  
 ### 2.配置`webpack.base.conf.js`和`vue.config.js`还有`package.json`
 
 ```
